@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers\Test;
 
-
 use App\Http\Controllers\Controller;
 use Symfony\Component\DomCrawler\Crawler;
 use Goutte\Client;
@@ -49,3 +48,4 @@ class TestController extends Controller
 		return $links;
 	}
 }
+

@@ -20,4 +20,10 @@ Route::group(['prefix' => 'test','namespace' => 'Test'],function(){
 		'as' => 'test.index',
 		'uses' => 'TestController@index'
 	]);
+
+	Route::get('/cat',function(){
+		$categories = (new \App\Scrapper\Scrapper())->getCategoryItems(5);
+		return dd($categories);
+	});
+
 });
