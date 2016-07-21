@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::group(['prefix' => 'test','namespace' => 'Test'],function(){
+	Route::get('/',[
+		'as' => 'test.index',
+		'uses' => 'TestController@index'
+	]);
+});
