@@ -8,7 +8,7 @@ use Goutte\Client;
 
 class TestController extends Controller
 {
-	private $link =  'http://www.porn.com';
+	private $link =  'http://www.example.com';
 	private $categories = [];
 
 	private function scrapper($link)
