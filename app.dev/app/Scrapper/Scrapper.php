@@ -8,7 +8,7 @@ use Goutte\Client;
 
 class Scrapper
 {
-	private $link =  'http://www.porn.com';
+	private $link =  'http://www.example.com';
 	private $categories = [];
 	private $categories_item = [];
 	private $client;
